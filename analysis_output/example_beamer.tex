@@ -1,0 +1,100 @@
+\documentclass[10pt]{beamer}
+%\documentclass[10pt, handout]{beamer}
+
+% general
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue} % you can change colors here
+\usepackage{natbib}
+
+% tables and figures
+\usepackage{booktabs}
+\usepackage{float}
+
+\usepackage{graphicx}
+\usepackage[skip=10pt]{caption}
+\usepackage{lscape}
+
+\setbeamertemplate{caption}[numbered]
+
+\title{Title of your presentation}
+\author{Your name \\ Affiliation}
+\date{August, 2018}
+
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Examples}
+  \frame{\tableofcontents  \frametitle{Roadmap}}
+
+
+\subsection{- Itemization}
+
+\begin{frame}
+  \frametitle{Itemization}
+
+Change the font size:
+\begin{itemize}
+	\item {\footnotesize footnotesize}
+	\item {\small small}
+	\item {\large large}
+	\item {\Large Large}
+	\item {\LARGE LARGE}
+	\item {\huge huge}
+	\item {\Huge Huge}
+\end{itemize}
+
+\end{frame}
+
+\subsection{- Math}
+
+\begin{frame}
+  \frametitle{Math}
+
+Write a math expression like this $y = f(x)$, or:
+\begin{equation}
+	y = \alpha + \beta x + \epsilon. \label{eq:reg} 
+\end{equation}
+
+\end{frame}
+
+
+\subsection{- Tables}
+
+\begin{frame}
+  \frametitle{Tables}
+
+\begin{table}[H] 
+	\caption{Summary statistics}
+	\begin{center}
+	\scalebox{0.9}[0.9]{
+		\input{sum_stat_test}
+	}
+	\end{center}
+\end{table}
+{\footnotesize {\it Notes}: Brabrabra.}
+
+\end{frame}
+
+
+\subsection{- Figures}
+
+\begin{frame}
+  \frametitle{Figures}
+
+\begin{figure}[H]
+	\begin{center}
+	\caption{Political candidates' opinion about fiscal policy, by sex} 
+	\includegraphics[width=0.8\textwidth]{yn_fiscalpol_bysex_py.png} \label{fig:hist2} 
+	\end{center}
+	\vspace{-5mm}
+\end{figure}
+{\footnotesize {\it Notes}: Brabrabra.}
+
+\end{frame}
+
+
+\end{document}
